@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="box">
+    <header class="dado">
+      <h1 class="dado_titulo">Your Result</h1>
+      <artticle class="dado_pesquisa">
+        <span class="dado_veri">76</span>
+        <p class="dado_base">of 100</p>
+      </artticle>
+      <h2 class="dado_subtitulo">Great</h2>
+      <p class="dado_paragrafo">You scored higher than 65% of the people who have taken these tests.</p>
+    </header>
+    
+    <main class="sumario">
+      <h3 class="sumario_titulo">Summary</h3>
+      <section class="sumario_reacao">
+          <article class="box-reacao">
+            <img class="sumario_icon" src="assets/images/icon-reaction.svg">
+            <p class="reacao-titulo">Reaction</p>
+          </article>
+          <p class="sumario_reacao-dt"><span class="dt_verif">80</span> / <span class="dt_base">100</span></p>
+      </section>
+      <section class="sumario_memoria">
+        <article class="box-memoria">
+          <img class="sumario_icon" src="assets/images/icon-memory.svg">
+          <p class="memoria-titulo">Memory</p>
+        </article>
+        <p class="sumario_memoria-dt"><span class="dt_verif">92</span> / <span class="dt_base">100</span></p>
+      </section>
+
+      <section class="sumario_verbal">
+        <article class="box-verbal">
+          <img class="sumario_icon" src="assets/images/icon-verbal.svg">
+          <p class="verbal-titulo"> Verbal</p>
+        </article>
+        <p class="sumario_verbal-dt"><span class="dt_verif">61</span> / <span class="dt_base">100</span></p>
+      </section>
+
+      <section class="sumario_visual">
+        <article class="box-visual">
+          <img class="sumario_icon" src="assets/images/icon-visual.svg">
+          <p class="visual-titulo"> Visual</p>
+        </article>
+        <p class="sumario_visual-dt"><span class="dt_verif">72</span> / <span class="dt_base">100</span></p>
+      </section>
+      <button>Continue</button>
+    
+    </main>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/jaelps">jaelson p</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+} /*font-family: 'Hanken Grotesk', sans-serif;*/
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.dado{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--White);
+    justify-content: center;
+}
+
+.dado_titulo{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.629);
+}
+
+.dado_pesquisa{
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dado_veri{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.dado_base{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.629);
+}
+
+.dado_subtitulo{
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.dado_paragrafo{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.759);
+}
+
+.sumario{
+    padding: 0 20px 20px 20px;
+}
+
+.sumario_reacao, .sumario_memoria, .sumario_verbal, .sumario_visual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.box-reacao,.box-memoria, .box-verbal, .box-visual{
+    display: flex;
+}
+
+.sumario_icon{
+    margin-right: 5px;
+}
+
+.sumario_reacao{
+    background-color: hsla(0, 100%, 67%, 0.036);
+}
+
+.reacao-titulo{
+    color: var(--Light-red);
+}
+
+.sumario_reacao-dt, .sumario_memoria-dt, .sumario_verbal-dt, .sumario_visual-dt{
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.dt_verif{
+    color: black;
+}
+
+.sumario_memoria{
+    background-color: hsla(39, 100%, 56%, 0.036);
+}
+
+.memoria-titulo{
+    color: var(--Orangey-yellow);
+}
+
+.sumario_verbal{
+    background-color: hsla(166, 100%, 37%, 0.036);
+}
+
+.verbal-titulo{
+    color: var(--Green-teal);
+}
+
+
+.sumario_visual{
+    background-color: hsla(241, 100%, 89%, 0.036);
+}
+
+.visual-titulo{
+    color: var(--Cobalt-blue);
+}
+
+button{
+    background-color: var(--Dark-gray-blue);
+    border: none;
+    border-radius: 20px;
+    color: var(--White);
+}
+
+@media screen and (max-width: 375px){
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dado{
+        width: 350px;
+        height: 290px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .dado_paragrafo{
+        width: 250px;
+        text-align: center;
+    }
+
+    .sumario_reacao, .sumario_memoria, .sumario_verbal, .sumario_visual{
+        width: 280px;
+        height: 40px;
+    }
+
+    button{
+        width: 300px;
+        height: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 1440px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 20px 20px 20px rgb(131, 128, 128);
+        width: 500px;
+        height: 350px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+
+    .dado{
+        width: 280px;
+        height: 350px;
+        border-radius: 20px;
+    }
+
+
+    .dado_titulo{
+        margin-top: -20px;
+        height: 30px;
+    }
+
+    .dado_paragrafo{
+        height: 30px;
+        width: 220px;
+        text-align: center;
+    }
+
+    .sumario_reacao, .sumario_memoria, .sumario_verbal, .sumario_visual{
+        width: 220px;
+        height: 40px;
+    }
+
+    button{
+        width: 240px;
+        height: 35px;
+    }
+}
